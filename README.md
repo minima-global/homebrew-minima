@@ -1,5 +1,9 @@
 # homebrew-minima
 
+*Makes a minima executable available on $PATH. Also runs minima as a service on startup.*
+
+### Instructions
+
 1. Add a tap (It's like a package repository. Points to this repo)
 ```sh
 brew tap minima-global/minima
