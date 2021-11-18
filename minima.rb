@@ -10,11 +10,11 @@ class Minima < Formula
       	s.gsub! "##PREFIX##", "#{prefix}"
       	s.gsub! "##HOMEBREW_PREFIX##", "#{HOMEBREW_PREFIX}"
       	s.gsub! "##HOMEBREW_PREFIX_ETC##", "#{etc}"
-      	s.gsub! "##HOMEBREW_PREFIX_LOG##", "#{var}/log"
       end      
       inreplace "brew/minima.plist" do |s|
       	s.gsub! "##BIN##", "#{bin}"
       	s.gsub! "##PLIST_NAME##", "#{plist_name}"
+        s.gsub! "##HOMEBREW_PREFIX_LOG##", "#{var}/log"
       end      
       prefix.install "brew/minima.plist", "jar/minima.jar" 
       prefix.install_symlink "minima.plist" => "#{plist_name}.plist"
