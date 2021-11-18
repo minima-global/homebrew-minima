@@ -8,6 +8,7 @@ class Minima < Formula
   def install
       inreplace "brew/minima" do |s|
       	s.gsub! "##PREFIX##", "#{prefix}"
+      	s.gsub! "##HOMEBREW_PREFIX##", "#{HOMEBREW_PREFIX}"
       	s.gsub! "##HOMEBREW_PREFIX_ETC##", "#{etc}"
       	s.gsub! "##HOMEBREW_PREFIX_LOG##", "#{var}/log"
       end      
