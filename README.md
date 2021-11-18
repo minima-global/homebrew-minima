@@ -20,5 +20,10 @@ brew install --HEAD minima-global/minima/minima
 ### Restarting
 Noticed that minima needs a few seconds to stop. Avoid using `brew services restsart minima` does allow for the `stop` to to complete before `start` is run.
 
-### Upgrading
-TODO
+### Updating
+Unfortunately without setting our tap to auto-update, it seems brew only allows you to run update all taps at once including homebrew iteself. After the new formula has been pulled down we can run reinstall.
+```sh
+brew update
+brew reinstall minima-global/minima/minima
+```
+
