@@ -20,7 +20,7 @@ class Minima < Formula
       	s.gsub! "##PLIST_NAME##", "#{plist_name}"
         s.gsub! "##HOMEBREW_PREFIX_LOG##", "#{var}/log"
       end      
-      prefix.install "brew/minima.plist", "jar/minima.jar" "mcli/jar/mcli.jar" 
+      prefix.install "brew/minima.plist", "jar/minima.jar", "mcli/jar/mcli.jar" 
       prefix.install_symlink "minima.plist" => "#{plist_name}.plist"
       etc.install "brew/minima.conf" => "minima.conf" unless File.exists? etc/"minima.conf"
       bin.install "brew/minima" => "minima"
