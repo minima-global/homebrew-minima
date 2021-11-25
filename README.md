@@ -36,9 +36,15 @@ brew install --HEAD minima-global/minima/minima
 
 ### Starting, restarting, stopping minima (as with brew services)
 ```sh
-brew services start minima
-brew services restart minima
-brew services stop minima
+brew services start minima  # start
+```
+```sh
+brew services restart minima  # restart, avoid using as brew services does not give minima enough time to stop somethmes
+```
+```sh
+brew services stop minima  # stop
+```
+```sh
 brew services list  # to flag any errors preventing successful start
 ```
 
