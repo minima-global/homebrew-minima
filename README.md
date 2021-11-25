@@ -1,10 +1,10 @@
 # homebrew-minima
 
-If you're running with MacOS and you're familiar with  [homebrew](https://brew.sh/), then this guide will explain who to get Minima up on running.
+If you're using with MacOS and you're familiar with [homebrew](https://brew.sh/), then this guide will explain how to get Minima up on running on it.
 
 Three use cases:
 
-* You want to run Minima as a background service (maybe as an Incentive Cash particiapnt) and prode it with commands once in a while
+* You want to run Minima as a background service (maybe as an Incentive Cash particiapnt) and poke it with commands once in a while
 
 * You want to run Minima from your shell as of when you need it
 
