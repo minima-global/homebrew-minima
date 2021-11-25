@@ -29,7 +29,10 @@ class Minima < Formula
   end
 
   def caveats; <<~EOS
+    For running Minima with brew services, here some intereting locations...
+
     Logs:   #{var}/log/minima.log
+    Data:   ~/.minima-brew
     Config: #{etc}/minima.conf
   EOS
   end
