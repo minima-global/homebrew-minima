@@ -30,6 +30,7 @@ class Minima < Formula
 
   def caveats; <<~EOS
     Logs:   #{var}/log/minima.log
+    Data:   ~/.minima-brew
     Config: #{etc}/minima.conf
   EOS
   end
