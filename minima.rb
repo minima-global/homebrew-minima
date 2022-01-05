@@ -29,7 +29,7 @@ class Minima < Formula
   end
 
   def caveats; <<~EOS
-    For running Minima with brew services, here some intereting locations...
+    For running Minima with brew services, here are some useful locations...
 
     Logs:   #{var}/log/minima.log
     Data:   ~/.minima-brew
