@@ -49,7 +49,9 @@ brew services list  # to flag any errors preventing successful start
 ```
 
 ### Starting minima (ad-hoc)
-`minima`
+```sh
+minima # with parameters i.e. --rpcenable
+```
 
 ### Using mcli
 Examples:
