@@ -1,6 +1,6 @@
 # homebrew-minima
 
-If you're using with MacOS and you're familiar with [homebrew](https://brew.sh/), then this guide will explain how to get Minima up on running on it.
+If you're using MacOS and you're familiar with [homebrew](https://brew.sh/), then this guide will explain how to get Minima up on running on it.
 
 Three use cases:
 
@@ -62,9 +62,9 @@ mcli incentivecash uid:c12965bd-41bd-4d6a-a59a-b57412c02381
 ```
 
 ### Updating
-Unfortunately without setting our tap to auto-update, it seems brew only allows you to run update all taps at once including homebrew iteself. After the new formula has been pulled down we can run reinstall. Changes to minima (as a serivce) only take effect after **stop** and **start**.
+Unfortunately without setting our tap to auto-update, it seems brew only allows you to run update on all taps at once including homebrew iteself. After the new formula has been pulled down we can run reinstall. New versions of minima (as a serivce) only take effect after **stop** and **start**.
 ```sh
 brew update
-brew reinstall minima-global/minima/minima
+brew reinstall minima
 ```
 
