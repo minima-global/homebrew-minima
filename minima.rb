@@ -1,7 +1,7 @@
 class Minima < Formula
   homepage "https://minima.global"
-  head "https://github.com/minima-global/Minima.git", branch: "feature-homebrew"
-  version "test-1"
+  head "https://github.com/minima-global/Minima.git"
+  version "0.100.30"
 
   depends_on "openjdk@11"
 
