@@ -1,12 +1,12 @@
 # homebrew-minima
 
-If you're using MacOS and you're familiar with [homebrew](https://brew.sh/), then this guide will explain how to get Minima up on running on it.
+If you're using MacOS and you're familiar with [homebrew](https://brew.sh/), then this guide will explain how to get Minima up and running on it.
 
 Three use cases:
 
-* You want to run Minima as a background service (maybe as an Incentive Cash particiapnt) and poke it with commands once in a while
+* You want to run Minima as a background service (maybe as an Incentive Program particiapnt) and poke it with commands once in a while
 
-* You want to run Minima from your shell as of when you need it
+* You want to run Minima from your shell as and when you need it
 
 * You want to be doing both the above at the same time
 
@@ -26,12 +26,12 @@ i.e. `minima -port 7001 -rpc 7002`
 brew tap minima-global/minima
 ```
 
-2. Install from a jar which has code from the latest dev branch but might not always be up-to-date.
+2.
 ```sh
 brew install --HEAD minima-global/minima/minima
 ```
 
-3. Installation output tells you were your default log (for minima as a service only) and config files are.
+3. Installation output tells you where your default log (for minima as a service only) and config files are.
 
 
 ### Starting, restarting, stopping minima (as with brew services)
@@ -39,7 +39,7 @@ brew install --HEAD minima-global/minima/minima
 brew services start minima  # start
 ```
 ```sh
-brew services restart minima  # restart, avoid using as brew services does not give minima enough time to stop somethmes
+brew services restart minima  # restart, avoid using as brew services does not give minima enough time to stop sometimes
 ```
 ```sh
 brew services stop minima  # stop
@@ -50,7 +50,7 @@ brew services list  # to flag any errors preventing successful start
 
 ### Starting minima (ad-hoc)
 ```sh
-minima # with parameters i.e. --rpcenable
+minima # with parameters i.e. -rpcenable
 ```
 
 ### Using mcli
@@ -60,13 +60,15 @@ mcli help
 ```
 
 ```sh
-mcli incentivecash uid:c12965bd-41bd-4d6a-a59a-b57412c02381
+mcli incentivecash uid:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
 ### Updating
-Unfortunately without setting our tap to auto-update, it seems brew only allows you to run update on all taps at once including homebrew iteself. After the new formula has been pulled down we can run reinstall. New versions of minima (as a serivce) only take effect after **stop** and **start**.
+Unfortunately without setting our tap to auto-update, it seems brew only allows you to run update on all taps at once including homebrew iteself. After the new formula has been pulled down we can run reinstall.
 ```sh
 brew update
 brew reinstall minima
-```
 
+brew services start minima
+brew services stop minima
+```
