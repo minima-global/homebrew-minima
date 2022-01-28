@@ -4,7 +4,7 @@ If you're using MacOS and you're familiar with [homebrew](https://brew.sh/), the
 
 Three use cases:
 
-* You want to run Minima as a background service (maybe as an Incentive Program particiapnt) and poke it with commands once in a while
+* You want to run Minima as a background service (maybe as an Incentive Program participant) and poke it with commands once in a while
 
 * You want to run Minima from your shell as and when you need it
 
