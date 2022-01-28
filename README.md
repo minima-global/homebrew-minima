@@ -28,7 +28,7 @@ brew tap minima-global/minima
 
 2.
 ```sh
-brew install --HEAD minima-global/minima/minima
+brew install minima-global/minima/minima
 ```
 
 3. Installation output tells you where your default log (for minima as a service only) and config files are.
