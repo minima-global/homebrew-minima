@@ -1,6 +1,7 @@
 class Minima < Formula
   homepage "https://minima.global"
-  head "https://github.com/minima-global/Minima.git"
+  url "https://github.com/minima-global/Minima/archive/d83bd20d077e3d3f718fe169f8bb3614c98df2aa.tar.gz"
+  sha256 "745055a8a39e21ae7da08bf7937a4014ac59c115b344661b074f15f9b31ba5bc"
   version "0.100.30"
 
   depends_on "openjdk@11"
