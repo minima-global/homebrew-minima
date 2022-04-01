@@ -69,6 +69,7 @@ Unfortunately without setting our tap to auto-update, it seems brew only allows 
 brew update
 brew reinstall minima
 
-brew services start minima
 brew services stop minima
+brew services start minima
+
 ```
